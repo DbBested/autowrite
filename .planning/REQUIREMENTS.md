@@ -23,23 +23,23 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Writing Engine
 
-- [ ] **WRIT-01**: User can submit a draft or notes file and select a preset to begin a revision workflow
-- [ ] **WRIT-02**: System diagnoses specific weaknesses in the draft (weak thesis, unclear structure, buried evidence, etc.) before any rewriting
-- [ ] **WRIT-03**: System generates a structured revision plan referencing specific diagnosis findings before applying changes
+- [x] **WRIT-01**: User can submit a draft or notes file and select a preset to begin a revision workflow
+- [x] **WRIT-02**: System diagnoses specific weaknesses in the draft (weak thesis, unclear structure, buried evidence, etc.) before any rewriting
+- [x] **WRIT-03**: System generates a structured revision plan referencing specific diagnosis findings before applying changes
 - [x] **WRIT-04**: System applies staged passes in preset-defined sequence with per-pass scope constraints (DO NOT touch rules)
 - [x] **WRIT-05**: Each pass preserves author voice by default using preset voice rules
 - [x] **WRIT-06**: System enforces factual integrity per pass — no new claims, no altered citations, no fabricated facts
-- [ ] **WRIT-07**: System produces a unified diff between input and output
-- [ ] **WRIT-08**: System produces per-change explanations (not just a summary)
-- [ ] **WRIT-09**: System outputs a final clean revised draft as a single deliverable file
-- [ ] **WRIT-10**: User can build from notes or outline into a polished piece (notes-to-draft flow)
+- [x] **WRIT-07**: System produces a unified diff between input and output
+- [x] **WRIT-08**: System produces per-change explanations (not just a summary)
+- [x] **WRIT-09**: System outputs a final clean revised draft as a single deliverable file
+- [x] **WRIT-10**: User can build from notes or outline into a polished piece (notes-to-draft flow)
 - [ ] **WRIT-11**: User can adapt a piece into another form by switching presets
 
 ### Run Logging
 
-- [ ] **RUNL-01**: Each revision run saves to an immutable timestamped directory in runs/
-- [ ] **RUNL-02**: Run directory contains input draft, diagnosis, revision plan, per-pass outputs, final draft, diffs, and eval snapshot
-- [ ] **RUNL-03**: Run metadata (preset used, pass sequence, timestamps) saved as JSON
+- [x] **RUNL-01**: Each revision run saves to an immutable timestamped directory in runs/
+- [x] **RUNL-02**: Run directory contains input draft, diagnosis, revision plan, per-pass outputs, final draft, diffs, and eval snapshot
+- [x] **RUNL-03**: Run metadata (preset used, pass sequence, timestamps) saved as JSON
 
 ### Eval System
 
@@ -113,20 +113,20 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PRES-03 | Phase 1 | Complete |
 | PRES-04 | Phase 1 | Complete |
 | PRES-05 | Phase 1 | Complete |
-| WRIT-01 | Phase 2 | Pending |
-| WRIT-02 | Phase 2 | Pending |
-| WRIT-03 | Phase 2 | Pending |
+| WRIT-01 | Phase 2 | Complete |
+| WRIT-02 | Phase 2 | Complete |
+| WRIT-03 | Phase 2 | Complete |
 | WRIT-04 | Phase 2 | Complete |
 | WRIT-05 | Phase 2 | Complete |
 | WRIT-06 | Phase 2 | Complete |
-| WRIT-07 | Phase 2 | Pending |
-| WRIT-08 | Phase 2 | Pending |
-| WRIT-09 | Phase 2 | Pending |
-| WRIT-10 | Phase 2 | Pending |
+| WRIT-07 | Phase 2 | Complete |
+| WRIT-08 | Phase 2 | Complete |
+| WRIT-09 | Phase 2 | Complete |
+| WRIT-10 | Phase 2 | Complete |
 | WRIT-11 | Phase 2 | Pending |
-| RUNL-01 | Phase 2 | Pending |
-| RUNL-02 | Phase 2 | Pending |
-| RUNL-03 | Phase 2 | Pending |
+| RUNL-01 | Phase 2 | Complete |
+| RUNL-02 | Phase 2 | Complete |
+| RUNL-03 | Phase 2 | Complete |
 | EVAL-01 | Phase 3 | Pending |
 | EVAL-02 | Phase 3 | Pending |
 | EVAL-03 | Phase 3 | Pending |

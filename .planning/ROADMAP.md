@@ -48,7 +48,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Per-pass scope constraint rules (14 pass rule files for all preset stage types)
-- [ ] 02-02-PLAN.md — /improve SKILL.md core revision engine
+- [x] 02-02-PLAN.md — /improve SKILL.md core revision engine
 - [ ] 02-03-PLAN.md — /build and /adapt variant skills (notes-to-draft and form adaptation)
 
 ### Phase 3: Eval System
