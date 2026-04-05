@@ -105,50 +105,50 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | — | Pending |
-| FOUND-02 | — | Pending |
-| FOUND-03 | — | Pending |
-| PRES-01 | — | Pending |
-| PRES-02 | — | Pending |
-| PRES-03 | — | Pending |
-| PRES-04 | — | Pending |
-| PRES-05 | — | Pending |
-| WRIT-01 | — | Pending |
-| WRIT-02 | — | Pending |
-| WRIT-03 | — | Pending |
-| WRIT-04 | — | Pending |
-| WRIT-05 | — | Pending |
-| WRIT-06 | — | Pending |
-| WRIT-07 | — | Pending |
-| WRIT-08 | — | Pending |
-| WRIT-09 | — | Pending |
-| WRIT-10 | — | Pending |
-| WRIT-11 | — | Pending |
-| RUNL-01 | — | Pending |
-| RUNL-02 | — | Pending |
-| RUNL-03 | — | Pending |
-| EVAL-01 | — | Pending |
-| EVAL-02 | — | Pending |
-| EVAL-03 | — | Pending |
-| EVAL-04 | — | Pending |
-| EVAL-05 | — | Pending |
-| EVAL-06 | — | Pending |
-| PCRE-01 | — | Pending |
-| PCRE-02 | — | Pending |
-| PCRE-03 | — | Pending |
-| PCRE-04 | — | Pending |
-| LOOP-01 | — | Pending |
-| LOOP-02 | — | Pending |
-| LOOP-03 | — | Pending |
-| LOOP-04 | — | Pending |
-| LOOP-05 | — | Pending |
-| LOOP-06 | — | Pending |
+| FOUND-01 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Pending |
+| PRES-01 | Phase 1 | Pending |
+| PRES-02 | Phase 1 | Pending |
+| PRES-03 | Phase 1 | Pending |
+| PRES-04 | Phase 1 | Pending |
+| PRES-05 | Phase 1 | Pending |
+| WRIT-01 | Phase 2 | Pending |
+| WRIT-02 | Phase 2 | Pending |
+| WRIT-03 | Phase 2 | Pending |
+| WRIT-04 | Phase 2 | Pending |
+| WRIT-05 | Phase 2 | Pending |
+| WRIT-06 | Phase 2 | Pending |
+| WRIT-07 | Phase 2 | Pending |
+| WRIT-08 | Phase 2 | Pending |
+| WRIT-09 | Phase 2 | Pending |
+| WRIT-10 | Phase 2 | Pending |
+| WRIT-11 | Phase 2 | Pending |
+| RUNL-01 | Phase 2 | Pending |
+| RUNL-02 | Phase 2 | Pending |
+| RUNL-03 | Phase 2 | Pending |
+| EVAL-01 | Phase 3 | Pending |
+| EVAL-02 | Phase 3 | Pending |
+| EVAL-03 | Phase 3 | Pending |
+| EVAL-04 | Phase 3 | Pending |
+| EVAL-05 | Phase 3 | Pending |
+| EVAL-06 | Phase 3 | Pending |
+| PCRE-01 | Phase 4 | Pending |
+| PCRE-02 | Phase 4 | Pending |
+| PCRE-03 | Phase 4 | Pending |
+| PCRE-04 | Phase 4 | Pending |
+| LOOP-01 | Phase 4 | Pending |
+| LOOP-02 | Phase 4 | Pending |
+| LOOP-03 | Phase 4 | Pending |
+| LOOP-04 | Phase 4 | Pending |
+| LOOP-05 | Phase 4 | Pending |
+| LOOP-06 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 38 total
-- Mapped to phases: 0
-- Unmapped: 38 ⚠️
+- Mapped to phases: 38
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-05*
-*Last updated: 2026-04-05 after initial definition*
+*Last updated: 2026-04-05 after roadmap creation*
