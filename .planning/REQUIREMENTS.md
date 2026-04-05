@@ -33,7 +33,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **WRIT-08**: System produces per-change explanations (not just a summary)
 - [x] **WRIT-09**: System outputs a final clean revised draft as a single deliverable file
 - [x] **WRIT-10**: User can build from notes or outline into a polished piece (notes-to-draft flow)
-- [ ] **WRIT-11**: User can adapt a piece into another form by switching presets
+- [x] **WRIT-11**: User can adapt a piece into another form by switching presets
 
 ### Run Logging
 
@@ -123,7 +123,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WRIT-08 | Phase 2 | Complete |
 | WRIT-09 | Phase 2 | Complete |
 | WRIT-10 | Phase 2 | Complete |
-| WRIT-11 | Phase 2 | Pending |
+| WRIT-11 | Phase 2 | Complete |
 | RUNL-01 | Phase 2 | Complete |
 | RUNL-02 | Phase 2 | Complete |
 | RUNL-03 | Phase 2 | Complete |

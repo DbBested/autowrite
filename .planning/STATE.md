@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 02-writing-engine/02-02-PLAN.md
-last_updated: "2026-04-05T23:37:06.024Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 02-writing-engine/02-03-PLAN.md
+last_updated: "2026-04-05T23:40:21.648Z"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -50,6 +50,7 @@ Plan: 3 of 3
 | Phase 01-foundation-and-presets P02 | 5 | 2 tasks | 3 files |
 | Phase 02-writing-engine P01 | 3 | 2 tasks | 14 files |
 | Phase 02-writing-engine P02 | 3 | 2 tasks | 1 files |
+| Phase 02-writing-engine P03 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -70,6 +71,9 @@ Recent decisions affecting current work:
 - [Phase 02-writing-engine]: Voice rules injected per-pass at each individual pass execution context (not globally) — required to prevent incremental voice drift across multi-pass execution
 - [Phase 02-writing-engine]: SKILL.md reads pass sequence from preset.stages at runtime with no hardcoded list — preset is single source of truth for stage order
 - [Phase 02-writing-engine]: diff -u computed between pristine input.md and final output.md only — never between intermediate pass files
+- [Phase 02-writing-engine]: build skill forces notes-to-draft classification — input_type is always rough notes, structure pass gets expanded latitude
+- [Phase 02-writing-engine]: adapt skill requires --to flag (no auto-inference) — loads target preset for all passes, not source form preset
+- [Phase 02-writing-engine]: Voice handling differentiated: /build=ESTABLISHMENT, /adapt=ADAPTATION, /improve=PRESERVATION
 
 ### Pending Todos
 
@@ -81,6 +85,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05T23:37:06.021Z
-Stopped at: Completed 02-writing-engine/02-02-PLAN.md
+Last session: 2026-04-05T23:40:21.645Z
+Stopped at: Completed 02-writing-engine/02-03-PLAN.md
 Resume file: None

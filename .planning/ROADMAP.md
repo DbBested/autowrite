@@ -13,7 +13,7 @@ Autowrite is built in four phases that follow a strict dependency order: the pre
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Foundation and Presets** - Repo structure, universal safety rules, and three hand-tuned preset JSON files with validated schema
-- [ ] **Phase 2: Writing Engine** - Staged revision workflow from user-submitted draft to revised output with diffs, explanations, and run logs
+- [x] **Phase 2: Writing Engine** - Staged revision workflow from user-submitted draft to revised output with diffs, explanations, and run logs (completed 2026-04-05)
 - [ ] **Phase 3: Eval System** - Isolated critic subagent producing criterion-level scores and stable eval snapshot JSON
 - [ ] **Phase 4: Autoloop and Preset Creation** - Mutation-eval self-improvement cycle and user-facing preset creation skill
 
@@ -44,12 +44,12 @@ Plans:
   3. A unified diff file is generated programmatically comparing the input draft to the final output
   4. Each revision pass writes only within its defined scope — running a diff after a clarity pass shows no structural changes and running a diff after a structure pass shows no sentence-level edits
   5. Each run directory in runs/ contains the full artifact set: input, diagnosis, revision plan, per-pass outputs, final draft, diff, and run metadata JSON
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
 - [x] 02-01-PLAN.md — Per-pass scope constraint rules (14 pass rule files for all preset stage types)
 - [x] 02-02-PLAN.md — /improve SKILL.md core revision engine
-- [ ] 02-03-PLAN.md — /build and /adapt variant skills (notes-to-draft and form adaptation)
+- [x] 02-03-PLAN.md — /build and /adapt variant skills (notes-to-draft and form adaptation)
 
 ### Phase 3: Eval System
 **Goal**: A dedicated critic subagent running in a separate context window can evaluate any revision output and produce a stable, machine-readable eval snapshot with criterion-level scores and failure points
@@ -81,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Presets | 2/2 | Complete | 2026-04-05 |
-| 2. Writing Engine | 0/3 | Planning complete | - |
+| 2. Writing Engine | 3/3 | Complete   | 2026-04-05 |
 | 3. Eval System | 0/TBD | Not started | - |
 | 4. Autoloop and Preset Creation | 0/TBD | Not started | - |
