@@ -26,9 +26,9 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **WRIT-01**: User can submit a draft or notes file and select a preset to begin a revision workflow
 - [ ] **WRIT-02**: System diagnoses specific weaknesses in the draft (weak thesis, unclear structure, buried evidence, etc.) before any rewriting
 - [ ] **WRIT-03**: System generates a structured revision plan referencing specific diagnosis findings before applying changes
-- [ ] **WRIT-04**: System applies staged passes in preset-defined sequence with per-pass scope constraints (DO NOT touch rules)
-- [ ] **WRIT-05**: Each pass preserves author voice by default using preset voice rules
-- [ ] **WRIT-06**: System enforces factual integrity per pass — no new claims, no altered citations, no fabricated facts
+- [x] **WRIT-04**: System applies staged passes in preset-defined sequence with per-pass scope constraints (DO NOT touch rules)
+- [x] **WRIT-05**: Each pass preserves author voice by default using preset voice rules
+- [x] **WRIT-06**: System enforces factual integrity per pass — no new claims, no altered citations, no fabricated facts
 - [ ] **WRIT-07**: System produces a unified diff between input and output
 - [ ] **WRIT-08**: System produces per-change explanations (not just a summary)
 - [ ] **WRIT-09**: System outputs a final clean revised draft as a single deliverable file
@@ -116,9 +116,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WRIT-01 | Phase 2 | Pending |
 | WRIT-02 | Phase 2 | Pending |
 | WRIT-03 | Phase 2 | Pending |
-| WRIT-04 | Phase 2 | Pending |
-| WRIT-05 | Phase 2 | Pending |
-| WRIT-06 | Phase 2 | Pending |
+| WRIT-04 | Phase 2 | Complete |
+| WRIT-05 | Phase 2 | Complete |
+| WRIT-06 | Phase 2 | Complete |
 | WRIT-07 | Phase 2 | Pending |
 | WRIT-08 | Phase 2 | Pending |
 | WRIT-09 | Phase 2 | Pending |
