@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Autowrite Preset",
+  "description": "Schema for Autowrite preset JSON files defining writing form rules, pass sequences, rubric criteria, and transformation defaults.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "description",
+    "form",
+    "version",
+    "goals",
+    "stages",
+    "voice",
+    "structure",
+    "rubric",
+    "constraints",
+    "transformations",
+    "examples"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the preset (e.g., 'blog-post')"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name for the preset (e.g., 'Blog Post')"
+    },
+    "description": {
+      "type": "string",
+      "description": "One-line description of the writing form this preset targets"
+    },
+    "form": {
+      "type": "string",
+      "description": "Form identifier, must match id"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semver version string (e.g., '1.0.0')"
+    },
+    "goals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Primary goals for this writing form (e.g., ['persuade', 'engage', 'inform'])"
+    },
+    "stages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3,
+      "description": "Ordered sequence of revision passes for this form. Must start with 'diagnose'."
+    },
+    "voice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tone", "formality", "sentenceLength", "paragraphStyle", "rhetoricalStyle"],
+      "properties": {
+        "tone": {
+          "type": "string",
+          "description": "Behavioral description of the tone (e.g., 'conversational', 'formal-analytical', 'precise-accessible')"
+        },
+        "formality": {
+          "type": "string",
+          "description": "Behavioral description of formality level (e.g., 'informal', 'high', 'medium')"
+        },
+        "sentenceLength": {
+          "type": "string",
+          "description": "Behavioral description of sentence length patterns (e.g., 'varied', 'medium-to-long', 'short-to-medium')"
+        },
+        "paragraphStyle": {
+          "type": "string",
+          "description": "Behavioral description of paragraph structure (e.g., 'short-punchy', 'topic-sentence-led')"
+        },
+        "rhetoricalStyle": {
+          "type": "string",
+          "description": "Primary rhetorical approach (e.g., 'direct-assertion', 'logos-primary', 'expository')"
+        }
+      },
+      "description": "Voice rules as behavioral descriptions, not scalar proxies"
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expectedSections", "sectionOrder", "paragraphPatterns", "introStyle", "endingStyle"],
+      "properties": {
+        "expectedSections": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of expected section names in the writing form"
+        },
+        "sectionOrder": {
+          "type": "string",
+          "description": "How strictly the section order is enforced ('strict', 'flexible', 'progressive')"
+        },
+        "paragraphPatterns": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Expected paragraph construction patterns (e.g., ['assertion-evidence', 'single-idea'])"
+        },
+        "introStyle": {
+          "type": "string",
+          "description": "Expected opening style (e.g., 'hook-first', 'thesis-forward', 'problem-first')"
+        },
+        "endingStyle": {
+          "type": "string",
+          "description": "Expected closing style (e.g., 'strong-close', 'restate-and-broaden', 'actionable-takeaway')"
+        }
+      },
+      "description": "Structural expectations for the writing form"
+    },
+    "rubric": {
+      "type": "object",
+      "required": ["criteria", "passing_threshold", "critical_criteria"],
+      "properties": {
+        "criteria": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "description", "weight"],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Criterion identifier (e.g., 'factual_integrity')"
+              },
+              "description": {
+                "type": "string",
+                "description": "Behavioral description of what passing this criterion looks like"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Weight in the aggregate score. All weights must sum to 1.0."
+              }
+            }
+          },
+          "description": "Scored evaluation criteria. Weights must sum to 1.0 (within 0.01 tolerance)."
+        },
+        "passing_threshold": {
+          "type": "number",
+          "description": "Minimum aggregate score required to pass evaluation"
+        },
+        "critical_criteria": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Criteria that are hard-fail gates. Must include 'factual_integrity' and 'voice_preservation'."
+        }
+      },
+      "description": "Evaluation rubric with weighted criteria and hard-fail gates"
+    },
+    "constraints": {
+      "type": "object",
+      "required": ["no_citation_invention", "no_stance_shift", "aggressive_rewrite_requires_explicit_request"],
+      "properties": {
+        "no_citation_invention": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Prohibits inventing citations or references not in the source."
+        },
+        "no_stance_shift": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Prohibits silently shifting the author's argumentative position."
+        },
+        "aggressive_rewrite_requires_explicit_request": {
+          "type": "boolean",
+          "description": "When true, major rewrites require explicit user instruction."
+        }
+      },
+      "description": "Hard safety constraints for this preset"
+    },
+    "transformations": {
+      "type": "object",
+      "required": ["preserveVoice", "allowMajorRestructure", "prioritizeClarity", "prioritizePersuasion", "prioritizeConcision"],
+      "properties": {
+        "preserveVoice": {
+          "type": "boolean",
+          "description": "When true, voice preservation is a first-class constraint. Must be true for all standard presets."
+        },
+        "allowMajorRestructure": {
+          "type": "boolean",
+          "description": "When true, the writing engine may reorganize the overall structure."
+        },
+        "prioritizeClarity": {
+          "type": "boolean",
+          "description": "When true, clarity improvements are prioritized over other goals."
+        },
+        "prioritizePersuasion": {
+          "type": "boolean",
+          "description": "When true, persuasive impact is elevated in revision decisions."
+        },
+        "prioritizeConcision": {
+          "type": "boolean",
+          "description": "When true, cutting unnecessary content is prioritized."
+        }
+      },
+      "description": "Default transformation behaviors for the writing engine"
+    },
+    "examples": {
+      "type": "array",
+      "description": "Optional example texts or fragments for this writing form"
+    }
+  }
+}
