@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Repo scaffold, CLAUDE.md safety rules, preset-editing rules, JSON Schema, validation script
-- [ ] 01-02-PLAN.md — Three hand-tuned presets (blog post, argumentative essay, technical explainer)
+- [x] 01-02-PLAN.md — Three hand-tuned presets (blog post, argumentative essay, technical explainer)
 
 ### Phase 2: Writing Engine
 **Goal**: A user can submit a draft or notes file, select a preset, and receive a revised output with diagnosis, revision plan, per-pass outputs, a unified diff, per-change explanations, and a complete run log

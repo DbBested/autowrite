@@ -16,9 +16,9 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Presets
 
 - [x] **PRES-01**: Preset schema defined in JSON covering form, goals, stages, voice rules, structure expectations, rubric criteria, constraints, and transformation defaults
-- [ ] **PRES-02**: Blog post preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
-- [ ] **PRES-03**: Argumentative essay preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
-- [ ] **PRES-04**: Technical explainer preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
+- [x] **PRES-02**: Blog post preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
+- [x] **PRES-03**: Argumentative essay preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
+- [x] **PRES-04**: Technical explainer preset hand-tuned with form-specific voice, structure, rubric, and pass sequence
 - [x] **PRES-05**: Preset validation script catches malformed preset JSON before use
 
 ### Writing Engine
@@ -109,9 +109,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUND-02 | Phase 1 | Complete |
 | FOUND-03 | Phase 1 | Complete |
 | PRES-01 | Phase 1 | Complete |
-| PRES-02 | Phase 1 | Pending |
-| PRES-03 | Phase 1 | Pending |
-| PRES-04 | Phase 1 | Pending |
+| PRES-02 | Phase 1 | Complete |
+| PRES-03 | Phase 1 | Complete |
+| PRES-04 | Phase 1 | Complete |
 | PRES-05 | Phase 1 | Complete |
 | WRIT-01 | Phase 2 | Pending |
 | WRIT-02 | Phase 2 | Pending |

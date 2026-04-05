@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 01-foundation-and-presets/01-01-PLAN.md
-last_updated: "2026-04-05T22:34:08.232Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 01-foundation-and-presets/01-02-PLAN.md
+last_updated: "2026-04-05T22:38:21.567Z"
 progress:
   total_phases: 4
-  completed_phases: 0
+  completed_phases: 1
   total_plans: 2
-  completed_plans: 1
+  completed_plans: 2
 ---
 
 # Project State
@@ -47,6 +47,7 @@ Plan: 2 of 2
 
 *Updated after each plan completion*
 | Phase 01-foundation-and-presets P01 | 8 | 2 tasks | 18 files |
+| Phase 01-foundation-and-presets P02 | 5 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -59,6 +60,8 @@ Recent decisions affecting current work:
 - [Foundation]: Voice preservation rules must be encoded in Phase 1 preset schema, not retrofitted in Phase 3.
 - [Foundation]: Eval agent requires separate context window + adversarial framing to prevent self-preference bias — architectural requirement, not a prompt tweak.
 - [Phase 01-foundation-and-presets]: CLAUDE.md rewritten to Autowrite-only universal safety rules (47 lines); preset-schema.json uses JSON Schema draft-07 for machine-readable reference; validate-preset.sh uses check_field helper pattern for named field errors
+- [Phase 01-foundation-and-presets]: Rubric weight distributions differentiated by form: blog engagement-heavy, essay structure-heavy, explainer clarity-heavy (0.30 — highest)
+- [Phase 01-foundation-and-presets]: prioritizePersuasion=true unique to argumentative-essay preset; voiceBehaviors array added to all three presets beyond schema minimum
 
 ### Pending Todos
 
@@ -70,6 +73,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05T22:34:08.230Z
-Stopped at: Completed 01-foundation-and-presets/01-01-PLAN.md
+Last session: 2026-04-05T22:38:21.565Z
+Stopped at: Completed 01-foundation-and-presets/01-02-PLAN.md
 Resume file: None
