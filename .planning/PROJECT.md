@@ -12,7 +12,8 @@ When a user submits a draft, Autowrite must produce a measurably better revision
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ Three hand-tuned presets available: blog post, argumentative essay, technical explainer — Phase 1
+- ✓ Preset schema defines form, goals, stages, voice rules, structure expectations, rubric criteria, constraints, and transformation defaults — Phase 1
 
 ### Active
 
@@ -24,8 +25,6 @@ When a user submits a draft, Autowrite must produce a measurably better revision
 - [ ] System generates a revision plan before applying changes
 - [ ] System applies controlled passes appropriate to the writing form
 - [ ] System preserves author voice by default
-- [ ] Three hand-tuned presets available: blog post, argumentative essay, technical explainer
-- [ ] Preset schema defines form, goals, stages, voice rules, structure expectations, rubric criteria, constraints, and transformation defaults
 - [ ] Specialized writing evaluation agent produces criterion-level scores, failure points, and concrete explanations
 - [ ] Eval metrics include novelty, clarity, structure, voice preservation, audience fit, concision, factual integrity
 - [ ] Self-improvement loop can mutate one asset, eval before/after, and keep only improvements
@@ -85,4 +84,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-05 after initialization*
+*Last updated: 2026-04-05 after Phase 1 completion*
