@@ -1,0 +1,87 @@
+{
+  "id": "argumentative-essay",
+  "name": "Argumentative Essay",
+  "description": "Formal argument-driven essay with clear thesis, structured evidence, and addressed objections",
+  "form": "argumentative-essay",
+  "version": "1.0.0",
+  "goals": ["persuade", "demonstrate-reasoning", "address-counterargument"],
+  "stages": ["diagnose", "revision-plan", "structure", "argument", "evidence", "objection", "clarity", "concision", "final-review"],
+  "voice": {
+    "tone": "formal-analytical",
+    "formality": "high — no contractions, no colloquialisms, no first person unless discipline conventions allow it",
+    "sentenceLength": "medium-to-long — complex ideas earn complex sentences, but each clause must carry weight",
+    "paragraphStyle": "topic-sentence-led — every paragraph opens with a claim or transition that tells the reader what this paragraph will do",
+    "rhetoricalStyle": "logos-primary — arguments advance through evidence and logical structure, not appeals to emotion or authority alone"
+  },
+  "voiceBehaviors": [
+    "Uses declarative thesis statement in the opening paragraph — the reader knows the claim before body paragraphs begin",
+    "Avoids contractions entirely — 'do not' not 'don't', 'cannot' not 'can't'",
+    "Each paragraph advances exactly one claim with supporting evidence",
+    "Uses explicit logical connectives ('therefore', 'however', 'because', 'nevertheless') to make argument structure visible",
+    "Qualifies claims precisely — 'most studies show' not 'studies show', 'in three of four cases' not 'often'",
+    "Addresses counterarguments directly rather than ignoring them — a strong argument acknowledges the strongest objection",
+    "Avoids rhetorical questions — asserts and defends rather than asking",
+    "Maintains consistent register throughout — does not shift between casual and formal"
+  ],
+  "structure": {
+    "expectedSections": ["introduction-with-thesis", "body-arguments", "counterargument", "rebuttal", "conclusion"],
+    "sectionOrder": "strict",
+    "paragraphPatterns": ["claim-evidence-warrant", "topic-sentence-support-synthesis"],
+    "introStyle": "thesis-forward — context is brief, thesis appears within the first three sentences",
+    "endingStyle": "restate-and-broaden — restates thesis in light of evidence presented, then gestures at wider implications without overreaching"
+  },
+  "rubric": {
+    "criteria": [
+      {
+        "name": "novelty",
+        "description": "Thesis makes a claim worth defending — not obvious, not merely descriptive. The essay takes a position that reasonable people could disagree with.",
+        "weight": 0.20
+      },
+      {
+        "name": "clarity",
+        "description": "Each sentence is unambiguous. Argument chain follows without logical gaps. No sentence requires context from three paragraphs ago to parse.",
+        "weight": 0.20
+      },
+      {
+        "name": "structure",
+        "description": "Thesis governs every paragraph. Body paragraphs follow logical order (not arbitrary). Conclusion follows from the body, not from general sentiment.",
+        "weight": 0.20
+      },
+      {
+        "name": "voice_preservation",
+        "description": "Analytical register maintained throughout. Author's specific argumentative choices (which objections to address, which evidence to foreground) are preserved.",
+        "weight": 0.15
+      },
+      {
+        "name": "audience_fit",
+        "description": "Assumes appropriate reader knowledge. No unexplained jargon that excludes the target audience. No over-explaining of concepts the audience would find patronizing.",
+        "weight": 0.10
+      },
+      {
+        "name": "concision",
+        "description": "No paragraph exists solely to pad length. Evidence is sufficient, not exhaustive. Repetition of the thesis is strategic (intro and conclusion), not accidental.",
+        "weight": 0.10
+      },
+      {
+        "name": "factual_integrity",
+        "description": "No invented citations, no fabricated evidence, no strengthened claims beyond what source material supports. Qualifications in the original are preserved.",
+        "weight": 0.05
+      }
+    ],
+    "passing_threshold": 3.5,
+    "critical_criteria": ["factual_integrity", "voice_preservation"]
+  },
+  "constraints": {
+    "no_citation_invention": true,
+    "no_stance_shift": true,
+    "aggressive_rewrite_requires_explicit_request": true
+  },
+  "transformations": {
+    "preserveVoice": true,
+    "allowMajorRestructure": false,
+    "prioritizeClarity": true,
+    "prioritizePersuasion": true,
+    "prioritizeConcision": false
+  },
+  "examples": []
+}

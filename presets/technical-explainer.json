@@ -1,0 +1,87 @@
+{
+  "id": "technical-explainer",
+  "name": "Technical Explainer",
+  "description": "Precise, accessible explanation of a technical concept with progressive disclosure from simple to complex",
+  "form": "technical-explainer",
+  "version": "1.0.0",
+  "goals": ["explain", "clarify", "enable-action"],
+  "stages": ["diagnose", "revision-plan", "structure", "clarity", "precision", "examples", "concision", "final-review"],
+  "voice": {
+    "tone": "precise-accessible — authoritative on the subject but never condescending",
+    "formality": "medium — professional but approachable, contractions acceptable",
+    "sentenceLength": "short-to-medium — complex ideas broken into digestible sentences, one concept per sentence",
+    "paragraphStyle": "definition-example-implication — introduce concept, show it in action, explain why it matters",
+    "rhetoricalStyle": "expository — explains rather than persuades, shows rather than tells"
+  },
+  "voiceBehaviors": [
+    "Defines terms before using them — no forward references to unexplained concepts",
+    "Uses imperative voice in procedural sections ('Run the command', 'Open the file') not passive ('The command should be run')",
+    "Avoids hedging on technical facts — if uncertain, says so explicitly ('the behavior is undocumented') rather than hedging ('it might possibly work')",
+    "Uses concrete examples immediately after abstractions — never more than one paragraph of theory without a grounding example",
+    "Prefers specific numbers and names over vague quantifiers ('3 retries with 500ms backoff' not 'several retries with a short delay')",
+    "Analogies are acceptable when introducing unfamiliar concepts but must be explicitly marked as analogies, not presented as technical descriptions",
+    "Code snippets and technical terms use consistent formatting (backticks, monospace) throughout",
+    "Avoids anthropomorphizing technical systems ('the database stores' not 'the database wants to store')"
+  ],
+  "structure": {
+    "expectedSections": ["problem-or-concept", "explanation", "examples", "caveats", "summary"],
+    "sectionOrder": "progressive — simple to complex, concrete to abstract",
+    "paragraphPatterns": ["define-then-illustrate", "compare-then-contrast"],
+    "introStyle": "problem-first — opens with the problem or question the reader has, not with background history",
+    "endingStyle": "actionable-takeaway — reader leaves knowing what to do next or what to remember"
+  },
+  "rubric": {
+    "criteria": [
+      {
+        "name": "novelty",
+        "description": "Explains in a way the reader has not encountered before. Not just restating documentation — adds insight, context, or a mental model that makes the concept stick.",
+        "weight": 0.10
+      },
+      {
+        "name": "clarity",
+        "description": "A reader unfamiliar with the topic can follow the explanation without external references. No logical leaps. No undefined terms. Each sentence builds on the previous.",
+        "weight": 0.30
+      },
+      {
+        "name": "structure",
+        "description": "Progressive disclosure holds — simple concepts precede complex ones. No section assumes knowledge from a later section. The piece can be read linearly without jumping.",
+        "weight": 0.20
+      },
+      {
+        "name": "voice_preservation",
+        "description": "Author's explanatory style is preserved — their choice of analogies, level of formality, and pedagogical approach remain intact after revision.",
+        "weight": 0.15
+      },
+      {
+        "name": "audience_fit",
+        "description": "Pitched correctly for the target audience. Does not explain what they already know. Does not skip what they need to learn. Prerequisites are stated or linked, not assumed.",
+        "weight": 0.15
+      },
+      {
+        "name": "concision",
+        "description": "No redundant explanations. Examples are illustrative, not exhaustive. If two examples make the same point, one is enough.",
+        "weight": 0.05
+      },
+      {
+        "name": "factual_integrity",
+        "description": "All technical claims are accurate. No invented API signatures, no fabricated benchmark numbers, no hallucinated library features. When the author's draft contains an error, flag it rather than silently correcting.",
+        "weight": 0.05
+      }
+    ],
+    "passing_threshold": 3.5,
+    "critical_criteria": ["factual_integrity", "voice_preservation"]
+  },
+  "constraints": {
+    "no_citation_invention": true,
+    "no_stance_shift": true,
+    "aggressive_rewrite_requires_explicit_request": true
+  },
+  "transformations": {
+    "preserveVoice": true,
+    "allowMajorRestructure": false,
+    "prioritizeClarity": true,
+    "prioritizePersuasion": false,
+    "prioritizeConcision": false
+  },
+  "examples": []
+}
