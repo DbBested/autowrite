@@ -28,7 +28,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. CLAUDE.md contains universal safety rules (no fabricated citations, voice preservation default, no silent stance shifts) and stays under 300 lines
   3. All required repo directories exist and a new revision run can write artifacts to the correct locations without path errors
   4. Each preset file contains all schema-required fields: form, goals, stages, voice rules, structure expectations, rubric criteria, constraints, and transformation defaults
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Repo scaffold, CLAUDE.md safety rules, preset-editing rules, JSON Schema, validation script
+- [ ] 01-02-PLAN.md — Three hand-tuned presets (blog post, argumentative essay, technical explainer)
 
 ### Phase 2: Writing Engine
 **Goal**: A user can submit a draft or notes file, select a preset, and receive a revised output with diagnosis, revision plan, per-pass outputs, a unified diff, per-change explanations, and a complete run log
@@ -71,7 +75,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation and Presets | 0/TBD | Not started | - |
+| 1. Foundation and Presets | 0/2 | Planning complete | - |
 | 2. Writing Engine | 0/TBD | Not started | - |
 | 3. Eval System | 0/TBD | Not started | - |
 | 4. Autoloop and Preset Creation | 0/TBD | Not started | - |
