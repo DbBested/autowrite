@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Repo scaffold, CLAUDE.md safety rules, preset-editing rules, JSON Schema, validation script
+- [x] 01-01-PLAN.md — Repo scaffold, CLAUDE.md safety rules, preset-editing rules, JSON Schema, validation script
 - [ ] 01-02-PLAN.md — Three hand-tuned presets (blog post, argumentative essay, technical explainer)
 
 ### Phase 2: Writing Engine
