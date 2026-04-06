@@ -12,42 +12,40 @@ When a user submits a draft, Autowrite must produce a measurably better revision
 
 ### Validated
 
-- ✓ Three hand-tuned presets available: blog post, argumentative essay, technical explainer — Phase 1
-- ✓ Preset schema defines form, goals, stages, voice rules, structure expectations, rubric criteria, constraints, and transformation defaults — Phase 1
+- ✓ Repository structure with drafts/, presets/, skills/, evals/, autoloop/, scripts/, runs/ — v1.0
+- ✓ CLAUDE.md universal safety rules (factual integrity, voice preservation, stance integrity, pass scope) — v1.0
+- ✓ Path-scoped behavioral rules via .claude/rules/*.md — v1.0
+- ✓ Preset schema (JSON) with form, goals, stages, voice, structure, rubric, constraints, transformations — v1.0
+- ✓ Three hand-tuned presets: blog post, argumentative essay, technical explainer — v1.0
+- ✓ Preset validation script (jq-based) — v1.0
+- ✓ /improve skill: draft → diagnosis → plan → staged passes → diff → explanation → output — v1.0
+- ✓ /build skill: notes-to-draft via /improve with forced notes classification — v1.0
+- ✓ /adapt skill: form adaptation via /improve with target preset — v1.0
+- ✓ 14 per-pass scope constraint rules with DO NOT touch boundaries — v1.0
+- ✓ Immutable timestamped run directories with full artifact set — v1.0
+- ✓ /eval skill: isolated adversarial critic with 7-criterion anchored rubric — v1.0
+- ✓ Eval snapshots as stable machine-readable JSON (eval.json) — v1.0
+- ✓ /create-preset skill: example text analysis → annotated preset → approval gate → save — v1.0
+- ✓ /autoloop skill: mutation-eval cycle with holdout protection and JSONL logging — v1.0
 
 ### Active
 
-- [ ] User can improve an existing draft through staged revision passes
-- [ ] User can build from notes or outline into a polished piece
-- [ ] User can adapt a piece into another writing form
-- [ ] User can create a reusable preset from one or more example texts
-- [ ] System diagnoses what is weak in a draft before rewriting
-- [ ] System generates a revision plan before applying changes
-- [ ] System applies controlled passes appropriate to the writing form
-- [ ] System preserves author voice by default
-- [ ] Specialized writing evaluation agent produces criterion-level scores, failure points, and concrete explanations
-- [ ] Eval metrics include novelty, clarity, structure, voice preservation, audience fit, concision, factual integrity
-- [ ] Self-improvement loop can mutate one asset, eval before/after, and keep only improvements
-- [ ] Outputs include revised draft, explanation of changes, diff, and eval snapshot
-- [ ] System exposes diffs and explains major changes
-- [ ] System never invents citations, fabricates facts, or silently shifts author stance
+(None — next milestone requirements TBD)
 
 ### Out of Scope
 
 - First-draft generation from scratch (no input) — Autowrite focuses on iterative improvement, not generation
 - Real-time collaborative editing — single-user workflow system
 - GUI or web interface — Claude Code native, CLI-only
-- More than three presets in v1 — business memo, newsletter, personal essay deferred to v2
-- Integration with external writing tools (Google Docs, Notion, etc.) — out of scope for v1
+- Integration with external writing tools (Google Docs, Notion, etc.) — out of scope
+- More than three first-party presets — /create-preset covers custom presets
 
 ## Context
 
-- **Architecture:** Four subsystems — writing engine (ingests drafts, runs passes), preset system (defines "good" per form), eval system (specialized critic agent), self-improvement loop (Auto Research-style mutation framework)
-- **Claude Code native:** Uses CLAUDE.md for repo-wide behavior, SKILL.md skills for writing tasks, local files for drafts/presets/diffs/evals/logs, scripts and hooks for automation
-- **Repo structure:** `drafts/`, `presets/`, `skills/`, `evals/`, `autoloop/`, `scripts/`, `runs/`
-- **Core passes:** diagnose, revision plan, structure, clarity, argument, evidence, objection, tone, concision, hook, ending, final review
-- **Preset creation flow:** analyze examples → synthesize blueprint → show inferred fields → save approved preset
-- **Eval acceptance rule for mutations:** aggregate score improves, no critical regressions, factual integrity and voice preservation remain acceptable
+- **v1.0 shipped:** 4 phases, 8 plans, 46 commits, 80 files, ~12,170 lines
+- **Architecture:** Four subsystems — writing engine (/improve, /build, /adapt), preset system (JSON presets + validation), eval system (/eval + isolated critic), self-improvement loop (/autoloop + /create-preset)
+- **Claude Code native:** CLAUDE.md for safety rules, SKILL.md per writing task, .claude/rules/passes/ for per-pass scope constraints, .claude/agents/ for eval critic
+- **Tech debt:** 2 items — preset-schema.json missing voiceBehaviors in properties; /autoloop eval.json path resolution ambiguous
 
 ## Constraints
 
@@ -60,11 +58,16 @@ When a user submits a draft, Autowrite must produce a measurably better revision
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Claude Code native (no GUI) | Inspectable, hackable, aligned with existing Claude Code workflows | — Pending |
-| Staged revision passes (not single-shot rewrite) | Controlled improvement preserves voice better than wholesale rewriting | — Pending |
-| Specialized eval agent (not self-eval) | Objective, hyper-critical, consistent evaluation requires separation from the writing agent | — Pending |
-| Auto Research-style self-improvement loop | Systematic prompt/preset improvement through measured mutation rather than guessing | — Pending |
-| Preset schema with full voice/structure/rubric spec | Presets must define "good" comprehensively enough to guide both revision and evaluation | — Pending |
+| Claude Code native (no GUI) | Inspectable, hackable, aligned with existing Claude Code workflows | ✓ Good |
+| Staged revision passes (not single-shot rewrite) | Controlled improvement preserves voice better than wholesale rewriting | ✓ Good |
+| Specialized eval agent (not self-eval) | Objective, hyper-critical, consistent evaluation requires separation from the writing agent | ✓ Good |
+| Auto Research-style self-improvement loop | Systematic prompt/preset improvement through measured mutation rather than guessing | ✓ Good |
+| Preset schema with full voice/structure/rubric spec | Presets must define "good" comprehensively enough to guide both revision and evaluation | ✓ Good |
+| JSON for all structured data (not YAML) | Processable by jq, Python stdlib, and Claude natively | ✓ Good |
+| One SKILL.md per writing task | Clean separation of concerns; each skill has its own context and supporting files | ✓ Good |
+| CLAUDE.md under 300 lines + path-scoped rules | Prevents instruction dropout; rules activate only when relevant | ✓ Good |
+| Adversarial eval critic with context: fork | Prevents self-preference bias; critic sees only text and rubric | ✓ Good |
+| Holdout set for autoloop (checked every 3 iterations) | Prevents Goodhart's Law overfitting | ✓ Good |
 
 ## Evolution
 
@@ -84,4 +87,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-05 after Phase 1 completion*
+*Last updated: 2026-04-06 after v1.0 milestone*
