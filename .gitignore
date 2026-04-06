@@ -1,0 +1,20 @@
+# Run outputs (user-generated, not repo content)
+runs/
+evals/*.json
+
+# Autoloop run artifacts (mutation logs stay, but eval outputs don't)
+autoloop/runs/*/evals/
+autoloop/runs/*/reference-outputs/
+
+# User drafts (personal content)
+# drafts/ is tracked with .gitkeep but user files are personal
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
