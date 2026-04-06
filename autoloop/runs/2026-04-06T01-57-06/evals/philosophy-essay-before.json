@@ -1,0 +1,16 @@
+{
+  "preset": "argumentative-essay",
+  "preset_version": "1.0.1",
+  "timestamp": "2026-04-06T01:58:00Z",
+  "criteria": [
+    {"name": "novelty", "score": 8, "weight": 0.20, "pass": true, "failure_points": [{"location": "Paragraph 1, sentence 5", "description": "Phrase 'zombies from the neck down' is slightly glib for formal-analytical register", "severity": "minor"}], "explanation": "Original thesis flipping the zombie argument is genuinely novel. Minor tone issue."},
+    {"name": "clarity", "score": 7, "weight": 0.20, "pass": true, "failure_points": [{"location": "Paragraph 5, sentence 3", "description": "Global broadcasting introduced too briefly for the argumentative weight it carries", "severity": "major"}, {"location": "Paragraph 9, sentences 1-3", "description": "Three-part reply structure announced but relationship between the three grounds is not explained", "severity": "minor"}], "explanation": "Generally clear but key concept (global broadcasting) underdeveloped."},
+    {"name": "structure", "score": 8, "weight": 0.20, "pass": true, "failure_points": [{"location": "Paragraphs 12-13", "description": "Hard problem counter-reply handles objection and response in one compressed section", "severity": "minor"}], "explanation": "Strong thesis-forward structure. Roadmap matches actual organization."},
+    {"name": "voice_preservation", "score": 7, "weight": 0.15, "pass": true, "failure_points": [{"location": "Paragraph 1, sentence 5", "description": "Casual register break with 'neck up as well'", "severity": "minor"}, {"location": "Paragraph 13, sentence 8", "description": "Triumphalist closing tone breaks analytical register", "severity": "minor"}], "explanation": "Two moments of casual/rhetorical tone break formal-analytical consistency."},
+    {"name": "audience_fit", "score": 7, "weight": 0.10, "pass": true, "failure_points": [{"location": "Paragraph 5, sentence 3", "description": "Global workspace theory assumes cognitive science background", "severity": "major"}, {"location": "Paragraph 3, sentence 3", "description": "'Primary visual cortex' used without definition", "severity": "minor"}], "explanation": "Good examples but some technical terms insufficiently explained for undergrad audience."},
+    {"name": "concision", "score": 8, "weight": 0.10, "pass": true, "failure_points": [{"location": "Paragraph 4, sentences 3-5", "description": "List of unconscious processes is somewhat redundant after earlier examples", "severity": "minor"}], "explanation": "Good word economy at ~1800 words. No padding paragraphs."},
+    {"name": "factual_integrity", "score": 8, "weight": 0.05, "pass": true, "failure_points": [{"location": "Paragraph 4, sentence 2", "description": "Libet-style claim stated as established fact despite being contested", "severity": "minor"}], "explanation": "No fabricated citations. Claims grounded in class materials."}
+  ],
+  "aggregate_score": 7.55,
+  "aggregate_pass": true
+}
