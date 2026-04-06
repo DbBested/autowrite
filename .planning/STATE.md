@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 03-eval-system/03-01-PLAN.md
-last_updated: "2026-04-06T01:21:56.110Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 04-autoloop-and-preset-creation/04-02-PLAN.md
+last_updated: "2026-04-06T02:05:15.755Z"
 progress:
   total_phases: 4
-  completed_phases: 3
-  total_plans: 6
-  completed_plans: 6
+  completed_phases: 4
+  total_plans: 8
+  completed_plans: 8
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-05)
 
 **Core value:** When a user submits a draft, Autowrite must produce a measurably better revision that preserves the author's voice — diagnosed, planned, and improved through form-aware staged passes.
-**Current focus:** Phase 03 — eval-system
+**Current focus:** Phase 04 — autoloop-and-preset-creation
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
+Phase: 04 (autoloop-and-preset-creation) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -52,6 +52,8 @@ Plan: Not started
 | Phase 02-writing-engine P02 | 3 | 2 tasks | 1 files |
 | Phase 02-writing-engine P03 | 2 | 2 tasks | 2 files |
 | Phase 03-eval-system P01 | 72 | 2 tasks | 2 files |
+| Phase 04-autoloop-and-preset-creation P01 | 3 | 2 tasks | 1 files |
+| Phase 04-autoloop-and-preset-creation P02 | 3 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -79,6 +81,11 @@ Recent decisions affecting current work:
 - [Phase 03-eval-system]: Critic allowed-tools restricted to Read only — SKILL.md writes eval.json after receiving critic's JSON output
 - [Phase 03-eval-system]: Critic receives ONLY text + rubric — no diagnosis.md, plan.md, or explanation.md injected (prevents self-preference bias)
 - [Phase 03-eval-system]: Aggregate pass requires ALL criteria pass AND weighted average >= 6; critical criteria force aggregate_pass false if < 6
+- [Phase 04-autoloop-and-preset-creation]: Approval gate is mandatory and non-negotiable — NEVER write preset file without explicit user approval; prevents silent-preset-write UX pitfall
+- [Phase 04-autoloop-and-preset-creation]: voiceBehaviors synthesis produces observable behavioral instructions, not scalar proxies — checkable by revision passes
+- [Phase 04-autoloop-and-preset-creation]: Rubric weights use three form-category templates (blog/engagement-heavy, essay/structure-heavy, explainer/clarity-heavy) with blog as fallback for ambiguous forms
+- [Phase 04-autoloop-and-preset-creation]: Required explicit --reference-draft flag in /autoloop — prevents eval on arbitrary text, preserves score comparability across mutation cycles
+- [Phase 04-autoloop-and-preset-creation]: Restricted /autoloop --target to presets/*.json only — prevents mutation of core skills or CLAUDE.md (Pitfall 4 protection, skill mutation deferred to v2)
 
 ### Pending Todos
 
@@ -90,6 +97,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-06T01:19:19.436Z
-Stopped at: Completed 03-eval-system/03-01-PLAN.md
+Last session: 2026-04-06T02:05:15.752Z
+Stopped at: Completed 04-autoloop-and-preset-creation/04-02-PLAN.md
 Resume file: None

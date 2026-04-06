@@ -52,19 +52,19 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Preset Creation
 
-- [ ] **PCRE-01**: User can create a new preset from one or more example texts
-- [ ] **PCRE-02**: System analyzes examples for form, tone, structure, rhetorical moves, and priorities
-- [ ] **PCRE-03**: System shows inferred preset fields for user editing before saving
-- [ ] **PCRE-04**: User can refine an existing preset by providing additional examples
+- [x] **PCRE-01**: User can create a new preset from one or more example texts
+- [x] **PCRE-02**: System analyzes examples for form, tone, structure, rhetorical moves, and priorities
+- [x] **PCRE-03**: System shows inferred preset fields for user editing before saving
+- [x] **PCRE-04**: User can refine an existing preset by providing additional examples
 
 ### Self-Improvement Loop
 
-- [ ] **LOOP-01**: Autoloop can pick one asset to mutate (skill instruction, preset stage order, rubric wording, few-shot example, output format)
-- [ ] **LOOP-02**: Autoloop runs baseline eval before mutation
-- [ ] **LOOP-03**: Autoloop applies one mutation and reruns eval
-- [ ] **LOOP-04**: Autoloop keeps mutation only if aggregate score improves with no critical regressions and factual integrity + voice preservation remain acceptable
-- [ ] **LOOP-05**: Autoloop logs all mutation attempts with before/after scores and acceptance decision
-- [ ] **LOOP-06**: Holdout set checked for divergence from loop scores to prevent Goodhart's Law overfitting
+- [x] **LOOP-01**: Autoloop can pick one asset to mutate (skill instruction, preset stage order, rubric wording, few-shot example, output format)
+- [x] **LOOP-02**: Autoloop runs baseline eval before mutation
+- [x] **LOOP-03**: Autoloop applies one mutation and reruns eval
+- [x] **LOOP-04**: Autoloop keeps mutation only if aggregate score improves with no critical regressions and factual integrity + voice preservation remain acceptable
+- [x] **LOOP-05**: Autoloop logs all mutation attempts with before/after scores and acceptance decision
+- [x] **LOOP-06**: Holdout set checked for divergence from loop scores to prevent Goodhart's Law overfitting
 
 ## v2 Requirements
 
@@ -133,16 +133,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EVAL-04 | Phase 3 | Complete |
 | EVAL-05 | Phase 3 | Complete |
 | EVAL-06 | Phase 3 | Complete |
-| PCRE-01 | Phase 4 | Pending |
-| PCRE-02 | Phase 4 | Pending |
-| PCRE-03 | Phase 4 | Pending |
-| PCRE-04 | Phase 4 | Pending |
-| LOOP-01 | Phase 4 | Pending |
-| LOOP-02 | Phase 4 | Pending |
-| LOOP-03 | Phase 4 | Pending |
-| LOOP-04 | Phase 4 | Pending |
-| LOOP-05 | Phase 4 | Pending |
-| LOOP-06 | Phase 4 | Pending |
+| PCRE-01 | Phase 4 | Complete |
+| PCRE-02 | Phase 4 | Complete |
+| PCRE-03 | Phase 4 | Complete |
+| PCRE-04 | Phase 4 | Complete |
+| LOOP-01 | Phase 4 | Complete |
+| LOOP-02 | Phase 4 | Complete |
+| LOOP-03 | Phase 4 | Complete |
+| LOOP-04 | Phase 4 | Complete |
+| LOOP-05 | Phase 4 | Complete |
+| LOOP-06 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 38 total

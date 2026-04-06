@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Foundation and Presets** - Repo structure, universal safety rules, and three hand-tuned preset JSON files with validated schema
 - [x] **Phase 2: Writing Engine** - Staged revision workflow from user-submitted draft to revised output with diffs, explanations, and run logs (completed 2026-04-05)
 - [ ] **Phase 3: Eval System** - Isolated critic subagent producing criterion-level scores and stable eval snapshot JSON
-- [ ] **Phase 4: Autoloop and Preset Creation** - Mutation-eval self-improvement cycle and user-facing preset creation skill
+- [x] **Phase 4: Autoloop and Preset Creation** - Mutation-eval self-improvement cycle and user-facing preset creation skill (completed 2026-04-06)
 
 ## Phase Details
 
@@ -74,11 +74,11 @@ Plans:
   2. A mutation that produces a lower aggregate score or a critical criterion regression is automatically rejected and the original asset is restored
   3. After N iterations, the holdout set scores are checked — if holdout scores diverge from loop scores by more than the defined threshold, the loop halts and logs the divergence
   4. User can run /create-preset with one or more example text files and see all inferred preset fields displayed for review before any file is written
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 04-01-PLAN.md — /create-preset skill (text analysis, preset synthesis, annotated display, approval gate, --refine mode)
-- [ ] 04-02-PLAN.md — /autoloop skill (mutation-eval cycle, acceptance rules, JSONL logging, holdout divergence checks)
+- [x] 04-01-PLAN.md — /create-preset skill (text analysis, preset synthesis, annotated display, approval gate, --refine mode)
+- [x] 04-02-PLAN.md — /autoloop skill (mutation-eval cycle, acceptance rules, JSONL logging, holdout divergence checks)
 
 ## Progress
 
@@ -90,4 +90,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation and Presets | 2/2 | Complete | 2026-04-05 |
 | 2. Writing Engine | 3/3 | Complete   | 2026-04-05 |
 | 3. Eval System | 0/1 | Planning complete | - |
-| 4. Autoloop and Preset Creation | 0/2 | Planning complete | - |
+| 4. Autoloop and Preset Creation | 2/2 | Complete   | 2026-04-06 |
