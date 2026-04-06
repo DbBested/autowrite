@@ -63,7 +63,7 @@ Plans:
 **Plans:** 1 plan
 
 Plans:
-- [ ] 03-01-PLAN.md — Eval critic subagent and /eval skill (agent definition, anchored rubric, invocation, dispatch, eval.json output)
+- [x] 03-01-PLAN.md — Eval critic subagent and /eval skill (agent definition, anchored rubric, invocation, dispatch, eval.json output)
 
 ### Phase 4: Autoloop and Preset Creation
 **Goal**: The system can run a mutation-eval cycle that improves a preset or skill asset only when scores measurably improve, and a user can create a new preset from example texts without writing JSON by hand

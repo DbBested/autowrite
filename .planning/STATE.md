@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 02-writing-engine/02-03-PLAN.md
-last_updated: "2026-04-05T23:44:27.325Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 03-eval-system/03-01-PLAN.md
+last_updated: "2026-04-06T01:19:19.439Z"
 progress:
   total_phases: 4
-  completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  completed_phases: 3
+  total_plans: 6
+  completed_plans: 6
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-05)
 
 **Core value:** When a user submits a draft, Autowrite must produce a measurably better revision that preserves the author's voice — diagnosed, planned, and improved through form-aware staged passes.
-**Current focus:** Phase 02 — writing-engine
+**Current focus:** Phase 03 — eval-system
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
+Phase: 03 (eval-system) — EXECUTING
+Plan: 1 of 1
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Plan: Not started
 | Phase 02-writing-engine P01 | 3 | 2 tasks | 14 files |
 | Phase 02-writing-engine P02 | 3 | 2 tasks | 1 files |
 | Phase 02-writing-engine P03 | 2 | 2 tasks | 2 files |
+| Phase 03-eval-system P01 | 72 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,10 @@ Recent decisions affecting current work:
 - [Phase 02-writing-engine]: build skill forces notes-to-draft classification — input_type is always rough notes, structure pass gets expanded latitude
 - [Phase 02-writing-engine]: adapt skill requires --to flag (no auto-inference) — loads target preset for all passes, not source form preset
 - [Phase 02-writing-engine]: Voice handling differentiated: /build=ESTABLISHMENT, /adapt=ADAPTATION, /improve=PRESERVATION
+- [Phase 03-eval-system]: Pass threshold hardcoded at score >= 6 (not read from preset.passing_threshold which holds legacy 1-5 value of 3.5)
+- [Phase 03-eval-system]: Critic allowed-tools restricted to Read only — SKILL.md writes eval.json after receiving critic's JSON output
+- [Phase 03-eval-system]: Critic receives ONLY text + rubric — no diagnosis.md, plan.md, or explanation.md injected (prevents self-preference bias)
+- [Phase 03-eval-system]: Aggregate pass requires ALL criteria pass AND weighted average >= 6; critical criteria force aggregate_pass false if < 6
 
 ### Pending Todos
 
@@ -85,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-05T23:40:21.645Z
-Stopped at: Completed 02-writing-engine/02-03-PLAN.md
+Last session: 2026-04-06T01:19:19.436Z
+Stopped at: Completed 03-eval-system/03-01-PLAN.md
 Resume file: None

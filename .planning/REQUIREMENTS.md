@@ -43,12 +43,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Eval System
 
-- [ ] **EVAL-01**: Specialized eval critic agent runs as an isolated subagent (separate context window from writing agent)
-- [ ] **EVAL-02**: Eval agent produces criterion-level scores for: novelty, clarity, structure, voice preservation, audience fit, concision, factual integrity
-- [ ] **EVAL-03**: Eval agent produces specific failure points with concrete explanations per criterion
-- [ ] **EVAL-04**: Eval rubric criteria and weights driven by the active preset
-- [ ] **EVAL-05**: Eval snapshot saved as stable, machine-readable JSON (criterion → score → explanation → failure_points)
-- [ ] **EVAL-06**: Eval agent uses adversarial framing (hyper-critical, not supportive)
+- [x] **EVAL-01**: Specialized eval critic agent runs as an isolated subagent (separate context window from writing agent)
+- [x] **EVAL-02**: Eval agent produces criterion-level scores for: novelty, clarity, structure, voice preservation, audience fit, concision, factual integrity
+- [x] **EVAL-03**: Eval agent produces specific failure points with concrete explanations per criterion
+- [x] **EVAL-04**: Eval rubric criteria and weights driven by the active preset
+- [x] **EVAL-05**: Eval snapshot saved as stable, machine-readable JSON (criterion → score → explanation → failure_points)
+- [x] **EVAL-06**: Eval agent uses adversarial framing (hyper-critical, not supportive)
 
 ### Preset Creation
 
@@ -127,12 +127,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | RUNL-01 | Phase 2 | Complete |
 | RUNL-02 | Phase 2 | Complete |
 | RUNL-03 | Phase 2 | Complete |
-| EVAL-01 | Phase 3 | Pending |
-| EVAL-02 | Phase 3 | Pending |
-| EVAL-03 | Phase 3 | Pending |
-| EVAL-04 | Phase 3 | Pending |
-| EVAL-05 | Phase 3 | Pending |
-| EVAL-06 | Phase 3 | Pending |
+| EVAL-01 | Phase 3 | Complete |
+| EVAL-02 | Phase 3 | Complete |
+| EVAL-03 | Phase 3 | Complete |
+| EVAL-04 | Phase 3 | Complete |
+| EVAL-05 | Phase 3 | Complete |
+| EVAL-06 | Phase 3 | Complete |
 | PCRE-01 | Phase 4 | Pending |
 | PCRE-02 | Phase 4 | Pending |
 | PCRE-03 | Phase 4 | Pending |
