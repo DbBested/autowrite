@@ -74,16 +74,20 @@ Plans:
   2. A mutation that produces a lower aggregate score or a critical criterion regression is automatically rejected and the original asset is restored
   3. After N iterations, the holdout set scores are checked — if holdout scores diverge from loop scores by more than the defined threshold, the loop halts and logs the divergence
   4. User can run /create-preset with one or more example text files and see all inferred preset fields displayed for review before any file is written
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — /create-preset skill (text analysis, preset synthesis, annotated display, approval gate, --refine mode)
+- [ ] 04-02-PLAN.md — /autoloop skill (mutation-eval cycle, acceptance rules, JSONL logging, holdout divergence checks)
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation and Presets | 2/2 | Complete | 2026-04-05 |
 | 2. Writing Engine | 3/3 | Complete   | 2026-04-05 |
 | 3. Eval System | 0/1 | Planning complete | - |
-| 4. Autoloop and Preset Creation | 0/TBD | Not started | - |
+| 4. Autoloop and Preset Creation | 0/2 | Planning complete | - |
