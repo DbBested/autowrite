@@ -60,7 +60,10 @@ Plans:
   2. Eval output contains a score, at least one failure point with a concrete explanation, and a pass/fail flag for each of the seven criteria: novelty, clarity, structure, voice preservation, audience fit, concision, factual integrity
   3. Eval rubric weights and criteria are loaded from the active preset, not hardcoded — swapping presets produces a different rubric emphasis
   4. Eval snapshot is a valid JSON file that can be parsed by jq without errors
-**Plans**: TBD
+**Plans:** 1 plan
+
+Plans:
+- [ ] 03-01-PLAN.md — Eval critic subagent and /eval skill (agent definition, anchored rubric, invocation, dispatch, eval.json output)
 
 ### Phase 4: Autoloop and Preset Creation
 **Goal**: The system can run a mutation-eval cycle that improves a preset or skill asset only when scores measurably improve, and a user can create a new preset from example texts without writing JSON by hand
@@ -82,5 +85,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation and Presets | 2/2 | Complete | 2026-04-05 |
 | 2. Writing Engine | 3/3 | Complete   | 2026-04-05 |
-| 3. Eval System | 0/TBD | Not started | - |
+| 3. Eval System | 0/1 | Planning complete | - |
 | 4. Autoloop and Preset Creation | 0/TBD | Not started | - |
