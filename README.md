@@ -26,49 +26,47 @@ That's it. Autowrite auto-detects the writing form, runs diagnosis + staged pass
 
 ## Before and after
 
-**Input:** 764 words of bullet-point notes
+**Input:** Bullet-point notes → `/build @drafts/blog-post-notes.md --preset blog-post`
 
 ```markdown
-## Thesis
-The zombie within — the fact that most of our cognition is unconscious —
-is evidence FOR materialism about consciousness, not against it.
+# Why most productivity advice is backwards
 
-## Core Argument
-- Chalmers: we can conceive of a physical duplicate with no consciousness
-- Neuroscience shows most cognitive processing is unconscious
-- Blindsight patients process visual info without conscious experience
-- If consciousness were non-physical, WHY would it attach to only SOME computations?
-- P1: Most cognition is unconscious
-- P2: Consciousness tracks specific computational features
-- P3: Dualism has no principled explanation for this selectivity
-- C: Materialism explains selectivity better than dualism
-
-## Best Objection
-- Correlation doesn't prove identity — like a radio receiving signals
-...
+- people optimize for output (more tasks, more hours, more hustle)
+- but the bottleneck is almost never output — it's input
+- what you choose to work on matters 10x more than how fast you work on it
+- nobody talks about the hard part: deciding what NOT to do
+- example: I spent a year optimizing my task management system.
+  Color coded labels, priority matrices, weekly reviews.
+  I was incredibly organized and incredibly unproductive.
+- the fix wasn't a better system. it was asking "if I could only do
+  one thing today, what would it be?"
+- controversial take: most "productivity" content is procrastination
+  disguised as work
 ```
 
-**Output:** 1,917 words of structured argumentative essay
+**Output:** Structured blog post with hook, argument, and close
 
 ```markdown
-One of the most influential arguments against materialism comes from the
-philosopher David Chalmers. Materialism is the view that everything,
-including consciousness, is physical. Chalmers challenges this view by
-asking us to conceive of a "zombie": a being physically identical to a
-human in every respect but with no conscious experience whatsoever. This
-paper argues that the zombie concept, properly understood, actually
-supports materialism rather than undermining it...
+I spent a year building the perfect productivity system. Color-coded
+labels, priority matrices, weekly reviews, the whole thing. I was
+incredibly organized. I was also incredibly unproductive.
 
-The third premise is the crucial one. If consciousness were a non-physical
-property — something separate from physical processes — there would be no
-principled explanation for why it accompanies only globally broadcast
-processes and not local ones. A non-physical mind, by definition, is not
-constrained by physical or functional features. There is nothing about
-being non-physical that would make a substance responsive to one type of
-neural computation rather than another...
+The system was flawless. The inputs were wrong.
+
+Here's what I mean. Most productivity advice optimizes for output —
+more tasks completed, more hours logged, more hustle. But the bottleneck
+is almost never output. It's input. What you choose to work on matters
+ten times more than how fast you work on it...
+
+Here's the part that will bother you if you're deep in the productivity
+world: most productivity content is procrastination disguised as work.
+Reading about how to be productive feels like being productive. Setting
+up a new system feels like progress. But none of it is the work itself.
+
+You don't need a better system. You need a shorter list.
 ```
 
-Full before/after: [`drafts/philosophy-essay-notes.md`](drafts/philosophy-essay-notes.md) → [`runs/` output](runs/)
+Full examples: [`drafts/`](drafts/) → [`runs/`](runs/)
 
 ## How it works
 
