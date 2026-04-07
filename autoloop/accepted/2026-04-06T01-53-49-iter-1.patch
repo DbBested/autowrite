@@ -1,0 +1,21 @@
+--- autoloop/runs/2026-04-06T01-53-49/backup/argumentative-essay.json	2026-04-06 01:53:49.651270000 -0400
++++ presets/argumentative-essay.json	2026-04-06 01:55:00.522929100 -0400
+@@ -3,7 +3,7 @@
+   "name": "Argumentative Essay",
+   "description": "Formal argument-driven essay with clear thesis, structured evidence, and addressed objections",
+   "form": "argumentative-essay",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "goals": ["persuade", "demonstrate-reasoning", "address-counterargument"],
+   "stages": ["diagnose", "revision-plan", "structure", "argument", "evidence", "objection", "clarity", "concision", "final-review"],
+   "voice": {
+@@ -21,7 +21,8 @@
+     "Qualifies claims precisely — 'most studies show' not 'studies show', 'in three of four cases' not 'often'",
+     "Addresses counterarguments directly rather than ignoring them — a strong argument acknowledges the strongest objection",
+     "Avoids rhetorical questions — asserts and defends rather than asking",
+-    "Maintains consistent register throughout — does not shift between casual and formal"
++    "Maintains consistent register throughout — does not shift between casual and formal",
++    "Defines every technical term, theory name, or discipline-specific concept in plain language on first use — the reader should never need outside knowledge to follow the argument"
+   ],
+   "structure": {
+     "expectedSections": ["introduction-with-thesis", "body-arguments", "counterargument", "rebuttal", "conclusion"],

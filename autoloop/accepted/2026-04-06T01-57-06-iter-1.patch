@@ -1,0 +1,20 @@
+--- autoloop/runs/2026-04-06T01-57-06/backup/argumentative-essay.json	2026-04-06 01:57:06.720807900 -0400
++++ presets/argumentative-essay.json	2026-04-06 01:58:12.347926900 -0400
+@@ -3,7 +3,7 @@
+   "name": "Argumentative Essay",
+   "description": "Formal argument-driven essay with clear thesis, structured evidence, and addressed objections",
+   "form": "argumentative-essay",
+-  "version": "1.0.1",
++  "version": "1.0.2",
+   "goals": ["persuade", "demonstrate-reasoning", "address-counterargument"],
+   "stages": ["diagnose", "revision-plan", "structure", "argument", "evidence", "objection", "clarity", "concision", "final-review"],
+   "voice": {
+@@ -55,7 +55,7 @@
+       },
+       {
+         "name": "audience_fit",
+-        "description": "Assumes appropriate reader knowledge. No unexplained jargon that excludes the target audience. No over-explaining of concepts the audience would find patronizing.",
++        "description": "Every technical term, theory name, or specialized concept is defined in plain language within two sentences of first use. Examples follow abstract claims within the same paragraph. No unexplained jargon. No over-explaining of concepts the audience would find obvious.",
+         "weight": 0.10
+       },
+       {

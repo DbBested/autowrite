@@ -94,3 +94,7 @@ Files exist check:
 Commit existence check:
 - `80f9201` — feat(03-01): create eval-critic.md adversarial subagent
 - `2d2e0ff` — feat(03-01): create /eval SKILL.md — preset-driven eval dispatch
+
+## Self-Check: PASSED
+
+All files present. All commits verified. No missing items.
